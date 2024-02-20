@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Tips - Tiny Travel Explorer</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tiny Travel Explorer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="travel-tips.html">Travel Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tips">
+        <h2>Travel Tips</h2>
+        <article>
+            <h3>Packing Guide</h3>
+            <p>Praesent id tincidunt nunc, in pretium nibh. Sed iaculis porta augue, eget porttitor risus ultrices non. Nulla eget elit enim. Donec a dignissim purus, eu ultricies purus. Quisque justo nisi, fringilla eget ex nec, eleifend dignissim ligula. Sed bibendum neque quis orci elementum, eu sollicitudin urna dapibus. Aliquam elementum maximus tristique. Pellentesque aliquet ligula efficitur urna cursus consectetur. Maecenas ornare vitae tellus quis placerat.</p>
+            <a href="https://www.youtube.com/watch?v=HhaJBpNr5zs">See More</a>
+        </article>
+        <article>
+            <h3>Top 10 Essentials to bring with you on a flight</h3>
+            <p>Praesent id tincidunt nunc, in pretium nibh. Sed iaculis porta augue, eget porttitor risus ultrices non. Nulla eget elit enim. Donec a dignissim purus, eu ultricies purus. Quisque justo nisi, fringilla eget ex nec, eleifend dignissim ligula. Sed bibendum neque quis orci elementum, eu sollicitudin urna dapibus. Aliquam elementum maximus tristique. Pellentesque aliquet ligula efficitur urna cursus consectetur. Maecenas ornare vitae tellus quis placerat.</p>
+            <a href="https://www.youtube.com/watch?v=FhznxmQuIKc">See More</a>
+        </article>
+        <article>
+            <h3>What to pack for a cruise</h3>
+            <p>Our frecvent customer describes it better.</p>
+            <br>
+            <div class="youtube-video">
+                <iframe width="400" height="250" src="https://www.youtube.com/embed/je_RpejnubQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </article>
+    </section>
+    <br>
+    <div class="social-box">
+        <p class="social-text">Let's chat and share the fun!</p>
+        <a href="https://www.facebook.com/your-facebook-page" target="_blank" rel="noopener noreferrer">
+            <button class="social-button">
+                <img src="facebook.svg" alt="Facebook">
+            </button>
+        </a>
+        <a href="https://t.me/your-telegram-channel" target="_blank" rel="noopener noreferrer">
+            <button class="social-button">
+                <img src="telegram.svg" alt="Telegram">
+            </button>
+        </a>
+        <a href="https://wa.me/your-whatsapp-number" target="_blank" rel="noopener noreferrer">
+            <button class="social-button">
+                <img src="whatsapp.svg" alt="WhatsApp">
+            </button>
+        </a>
+    </div>
+<div class="newsletter-container">
+    <div class="newsletter-text">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest updates and special offers delivered directly to your inbox.</p>
+    </div>
+    <div class="newsletter-form">
+        <form action="#" method="post" onsubmit="showThankYouMessage(event)">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="destination">Destination Preferences:</label>
+            <select id="destination" name="destination">
+                <option value="beach">Beach</option>
+                <option value="mountains">Mountains</option>
+                <option value="city">City</option>
+                <option value="countryside">Countryside</option>
+                <option value="countryside">Cruise</option>
+            </select>
+
+            <button type="submit">Subscribe</button>
+        </form>
+        <div id="thankYouMessage"></div>
+    </div>
+</div>
+
+<script>
+    function showThankYouMessage(event) {
+        event.preventDefault(); // Prevents the form from submitting
+        var thankYouElement = document.getElementById("thankYouMessage");
+        thankYouElement.innerHTML = "<p style='font-size: 18px; color: #3498db;'>Thank you for subscribing!</p>";
+    }
+</script>
+<footer>
+    <p>&copy; 2024 Tiny Travel Explorer. All rights reserved.</p>
+</footer>
+</body>
+
+</html>
